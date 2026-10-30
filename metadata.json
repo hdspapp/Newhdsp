@@ -1,0 +1,6 @@
+{
+  "name": "HDSP - Home Domestic Service Provider Karachi",
+  "description": "Official AI assistant and domestic staffing booking portal for HDSP Karachi. Verified house maids, cooks, drivers, babysitters, and patient care with 3 guarantors and police clearance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
