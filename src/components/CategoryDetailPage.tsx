@@ -556,7 +556,7 @@ export const CategoryDetailPage: React.FC<CategoryDetailPageProps> = ({
   const category = DETAILED_CATEGORIES[categoryId] || DETAILED_CATEGORIES.maid;
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
 
-  const phoneIntl = '923032632605';
+  const phoneIntl = '923030230847';
   const whatsappUrl = `https://wa.me/${phoneIntl}?text=${encodeURIComponent(
     `*Inquiry for ${category.title}*\nAssalam o Alaikum, I would like to hire a verified ${category.title} in Karachi. Please share available candidate profiles and packages.`
   )}`;
@@ -644,7 +644,7 @@ export const CategoryDetailPage: React.FC<CategoryDetailPageProps> = ({
                   className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm shadow-sm transition flex items-center justify-center gap-2"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp: 0303 2632605</span>
+                  <span>WhatsApp: 0303 0230847</span>
                 </a>
               </div>
             </div>
@@ -802,7 +802,7 @@ export const CategoryDetailPage: React.FC<CategoryDetailPageProps> = ({
               className="bg-emerald-950/50 hover:bg-emerald-950/70 border border-emerald-400/40 text-white font-bold py-3 px-6 rounded-xl text-xs sm:text-sm flex items-center gap-2 transition"
             >
               <MessageCircle className="w-4 h-4 text-emerald-300" />
-              <span>WhatsApp: 0303 2632605</span>
+              <span>WhatsApp: 0303 0230847</span>
             </a>
           </div>
         </div>

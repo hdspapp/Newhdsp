@@ -42,9 +42,9 @@ export interface KarachiArea {
 export const BUSINESS_DETAILS = {
   name: 'HDSP (Home Domestic Service Provider)',
   shortName: 'HDSP Karachi',
-  phone: '0303 2632605',
-  phoneRaw: '03032632605',
-  whatsappIntl: '923032632605',
+  phone: '0303 0230847',
+  phoneRaw: '03030230847',
+  whatsappIntl: '923030230847',
   address: 'Office UF-61, Defence Mall, DHA Phase 1, Karachi, Pakistan',
   timings: 'Monday to Saturday: 9:00 AM – 9:00 PM (WhatsApp 24/7)',
   email: 'hdsp1285@gmail.com',

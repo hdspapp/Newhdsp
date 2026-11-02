@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="flex items-center gap-1.5 font-bold text-emerald-400 hover:text-emerald-300 transition"
             >
               <MessageCircle className="w-3.5 h-3.5" />
-              <span>0303 2632605</span>
+              <span>{BUSINESS_DETAILS.phone}</span>
             </a>
 
             {/* Language switch */}
@@ -203,7 +203,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="w-full bg-emerald-50 text-emerald-800 font-bold py-2.5 rounded-xl text-center text-sm flex items-center justify-center gap-2 border border-emerald-200"
             >
               <MessageCircle className="w-4 h-4 text-emerald-600" />
-              WhatsApp: 0303 2632605
+              WhatsApp: {BUSINESS_DETAILS.phone}
             </a>
           </div>
         </div>

@@ -112,7 +112,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onBookStaff }) => {
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'verification' | 'salaries' | 'process' | 'replacement'>('all');
   const [openIds, setOpenIds] = useState<Record<string, boolean>>({ f1: true, f2: true });
 
-  const phoneIntl = '923032632605';
+  const phoneIntl = '923030230847';
 
   const toggleFaq = (id: string) => {
     setOpenIds((prev) => ({ ...prev, [id]: !prev[id] }));
@@ -231,7 +231,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onBookStaff }) => {
             })
           ) : (
             <div className="bg-white p-8 rounded-2xl border border-slate-200 text-center text-slate-500 text-sm">
-              No matching questions found for "{searchTerm}". Please call or WhatsApp us at 0303 2632605.
+              No matching questions found for "{searchTerm}". Please call or WhatsApp us at 0303 0230847.
             </div>
           )}
         </div>
@@ -258,7 +258,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onBookStaff }) => {
               className="bg-white hover:bg-emerald-50 text-emerald-900 font-bold py-3 px-5 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition"
             >
               <MessageCircle className="w-4 h-4 text-emerald-700" />
-              <span>WhatsApp: 0303 2632605</span>
+              <span>WhatsApp: 0303 0230847</span>
             </a>
 
             <button

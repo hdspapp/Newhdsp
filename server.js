@@ -25,7 +25,7 @@ Your goal is to assist clients professionally, answer inquiries, explain verific
 
 # Business Details
 - Business Name: HDSP (Home Domestic Service Provider)
-- Phone / WhatsApp: 0303 2632605 (International: +92 303 2632605)
+- Phone / WhatsApp: 0303 0230847 (International: +92 303 0230847)
 - Office Address: Office UF-61, Defence Mall, DHA Phase 1, Karachi, Pakistan
 - Location Coverage: All major areas of Karachi (DHA Phases 1-8, Clifton, PECHS, Gulshan-e-Iqbal, Gulistan-e-Johar, North Nazimabad, Bahria Town, Scheme 33, Malir, Korangi, Askari, etc.)
 - Working Hours: Monday to Saturday 9:00 AM - 9:00 PM (Emergency WhatsApp booking 24/7)
@@ -50,7 +50,7 @@ When clients ask about safety, candidate authenticity, or trustworthiness, empha
 - Tone: Warm, respectful, professional, trustworthy, and helpful.
 - Language: You can respond in English, Urdu (Nastaliq or Roman Urdu), depending on the language used by the user. If the user greets in Urdu (e.g. "Salam", "Mujhe maid chahiye"), respond in polite Roman Urdu or Urdu script.
 - Clarity: Keep responses structured, easy to read, and quick to scan using bold text and bullet points.
-- Action-Oriented: Always encourage the user to share their requirements or reach out via WhatsApp/Phone at 0303 2632605 to begin the shortlisting process.
+- Action-Oriented: Always encourage the user to share their requirements or reach out via WhatsApp/Phone at 0303 0230847 to begin the shortlisting process.
 
 # Handling Hiring Requests
 When a customer requests to hire staff, collect the following details politely:
@@ -61,7 +61,7 @@ When a customer requests to hire staff, collect the following details politely:
 5. Preferred Location / Area in Karachi
 6. Any Specific Requirements or Duties
 
-After gathering details, summarize their request neatly and direct them to finalize the booking via phone/WhatsApp at 0303 2632605 or by visiting Office UF-61, Defence Mall, DHA Phase 1, Karachi.`;
+After gathering details, summarize their request neatly and direct them to finalize the booking via phone/WhatsApp at 0303 0230847 or by visiting Office UF-61, Defence Mall, DHA Phase 1, Karachi.`;
 var inquiries = [
   {
     id: "HDSP-KHI-1042",
@@ -148,7 +148,7 @@ function generateHdspResponse(query) {
 - **\u0627\u0646 \u067E\u0631\u0633\u0646 \u0627\u06CC\u0686 \u0622\u0631 \u0627\u0646\u0679\u0631\u0648\u06CC\u0648 (HR Interview):** \u06C1\u0645\u0627\u0631\u06D2 \u0688\u06CC\u0641\u0646\u0633 \u0645\u0627\u0644 \u0622\u0641\u0633 \u0645\u06CC\u06BA \u0627\u0645\u06CC\u062F\u0648\u0627\u0631 \u06A9\u06CC \u0630\u0627\u062A\u06CC \u0635\u0641\u0627\u0626\u06CC\u060C \u0628\u0627\u062A \u0686\u06CC\u062A \u0627\u0648\u0631 \u06C1\u0646\u0631 \u06A9\u0627 \u0639\u0645\u0644\u06CC \u0679\u06CC\u0633\u0679 \u0644\u06CC\u0627 \u062C\u0627\u062A\u0627 \u06C1\u06D2\u06D4
 - **\u0645\u062A\u0628\u0627\u062F\u0644 \u06A9\u06CC \u0633\u06C1\u0648\u0644\u062A (Replacement Guarantee):** \u0627\u06AF\u0631 \u0645\u0644\u0627\u0632\u0645 \u0622\u067E \u06A9\u06D2 \u06AF\u06BE\u0631 \u06A9\u06D2 \u0645\u0639\u06CC\u0627\u0631 \u067E\u0631 \u067E\u0648\u0631\u0627 \u0646\u06C1 \u0627\u062A\u0631\u06D2\u060C \u062A\u0648 \u06C1\u0645 \u0641\u0648\u0631\u06CC \u0645\u062A\u0628\u0627\u062F\u0644 \u0641\u0631\u0627\u06C1\u0645 \u06A9\u0631\u062A\u06D2 \u06C1\u06CC\u06BA\u06D4
 
-\u0645\u0632\u06CC\u062F \u062A\u0641\u0635\u06CC\u0644\u0627\u062A \u06CC\u0627 \u0628\u06A9\u0646\u06AF \u06A9\u06D2 \u0644\u06CC\u06D2 \u0628\u0631\u0627\u06C1 \u06A9\u0631\u0645 \u06C1\u0645\u06CC\u06BA **0303 2632605** \u067E\u0631 \u06A9\u0627\u0644 \u06CC\u0627 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA\u060C \u06CC\u0627 \u06C1\u0645\u0627\u0631\u06D2 \u062F\u0641\u062A\u0631 **Office UF-61, Defence Mall, DHA Phase 1, Karachi** \u062A\u0634\u0631\u06CC\u0641 \u0644\u0627\u0626\u06CC\u06BA\u06D4`;
+\u0645\u0632\u06CC\u062F \u062A\u0641\u0635\u06CC\u0644\u0627\u062A \u06CC\u0627 \u0628\u06A9\u0646\u06AF \u06A9\u06D2 \u0644\u06CC\u06D2 \u0628\u0631\u0627\u06C1 \u06A9\u0631\u0645 \u06C1\u0645\u06CC\u06BA **0303 0230847** \u067E\u0631 \u06A9\u0627\u0644 \u06CC\u0627 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA\u060C \u06CC\u0627 \u06C1\u0645\u0627\u0631\u06D2 \u062F\u0641\u062A\u0631 **Office UF-61, Defence Mall, DHA Phase 1, Karachi** \u062A\u0634\u0631\u06CC\u0641 \u0644\u0627\u0626\u06CC\u06BA\u06D4`;
     }
     return `**HDSP's 5-Step Verification & Safety Standards:**
 
@@ -160,7 +160,7 @@ At HDSP (Home Domestic Service Provider), we enforce a rigorous screening proces
 - **In-Person HR Interview:** Conducted by our senior recruitment team at Defence Mall evaluating attitude, hygiene, and relevant domestic skills.
 - **Dedicated Replacement Guarantee:** Free, prompt candidate replacement if the staff member is not a suitable fit.
 
-To proceed with shortlisting, call or WhatsApp us at **0303 2632605** or visit **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`;
+To proceed with shortlisting, call or WhatsApp us at **0303 0230847** or visit **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`;
   }
   if (lower.includes("cook") || lower.includes("chef") || lower.includes("khana") || lower.includes("bawarchi")) {
     if (isUrdu) {
@@ -175,7 +175,7 @@ To proceed with shortlisting, call or WhatsApp us at **0303 2632605** or visit *
   - **Part-Time (\u0627\u06CC\u06A9 \u06CC\u0627 \u062F\u0648 \u0648\u0642\u062A):** Rs. 18,000 \u2013 28,000 / \u0645\u0627\u06C1\u0627\u0646\u06C1
 - **\u062A\u0635\u062F\u06CC\u0642:** \u067E\u0648\u0644\u06CC\u0633 \u06A9\u0644\u06CC\u0626\u0631\u0646\u0633\u060C \u0646\u0627\u062F\u0631\u0627 \u0634\u0646\u0627\u062E\u062A\u06CC \u06A9\u0627\u0631\u0688 \u0627\u0648\u0631 3 \u0645\u0639\u062A\u0628\u0631 \u0636\u0627\u0645\u0646 \u0644\u0627\u0632\u0645\u06CC\u06D4
 
-\u06A9\u06A9 \u0634\u0627\u0631\u0679 \u0644\u0633\u0679 \u06A9\u0631\u0648\u0627\u0646\u06D2 \u06A9\u06D2 \u0644\u06CC\u06D2 \u0627\u067E\u0646\u0627 \u0646\u0627\u0645\u060C \u0645\u0637\u0644\u0648\u0628\u06C1 \u0639\u0644\u0627\u0642\u06C1 \u0627\u0648\u0631 \u0627\u0648\u0642\u0627\u062A \u06C1\u0645\u06CC\u06BA **0303 2632605** \u067E\u0631 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA \u06CC\u0627 \u0622\u0646 \u0644\u0627\u0626\u0646 \u0641\u0627\u0631\u0645 \u067E\u0631 \u06A9\u0631 \u0644\u06CC\u06BA\u06D4`;
+\u06A9\u06A9 \u0634\u0627\u0631\u0679 \u0644\u0633\u0679 \u06A9\u0631\u0648\u0627\u0646\u06D2 \u06A9\u06D2 \u0644\u06CC\u06D2 \u0627\u067E\u0646\u0627 \u0646\u0627\u0645\u060C \u0645\u0637\u0644\u0648\u0628\u06C1 \u0639\u0644\u0627\u0642\u06C1 \u0627\u0648\u0631 \u0627\u0648\u0642\u0627\u062A \u06C1\u0645\u06CC\u06BA **0303 0230847** \u067E\u0631 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA \u06CC\u0627 \u0622\u0646 \u0644\u0627\u0626\u0646 \u0641\u0627\u0631\u0645 \u067E\u0631 \u06A9\u0631 \u0644\u06CC\u06BA\u06D4`;
     }
     return `**HDSP Professional Cook & Chef Placement (Karachi):**
 
@@ -188,7 +188,7 @@ We supply experienced, hygienic cooks across all residential areas of Karachi:
   - **Part-Time (Morning or Evening meals):** Rs. 18,000 \u2013 28,000 / month
 - **Screening:** Sindh Police clearance, NADRA CNIC verification, and 3 registered guarantors on file.
 
-Please share your **Full Name, WhatsApp number, and preferred area** or message us directly at **0303 2632605** to schedule interviews!`;
+Please share your **Full Name, WhatsApp number, and preferred area** or message us directly at **0303 0230847** to schedule interviews!`;
   }
   if (lower.includes("maid") || lower.includes("masi") || lower.includes("clean") || lower.includes("safai") || lower.includes("helper") || lower.includes("bartan")) {
     if (isUrdu) {
@@ -203,7 +203,7 @@ Please share your **Full Name, WhatsApp number, and preferred area** or message 
   - **Part-Time (\u0686\u0646\u062F \u06AF\u06BE\u0646\u0679\u06D2):** Rs. 14,000 \u2013 20,000 / \u0645\u0627\u06C1\u0627\u0646\u06C1
 - **\u06AF\u0627\u0631\u0646\u0679\u06CC:** \u0646\u0627\u062F\u0631\u0627 \u062A\u0635\u062F\u06CC\u0642\u060C \u067E\u0648\u0644\u06CC\u0633 \u0631\u06CC\u06A9\u0627\u0631\u0688 \u0686\u06CC\u06A9\u060C 3 \u0636\u0627\u0645\u0646 \u0627\u0648\u0631 \u0631\u06CC\u067E\u0644\u06CC\u0633\u0645\u0646\u0679 \u0628\u06CC\u06A9 \u0627\u067E\u06D4
 
-\u0628\u06A9\u0646\u06AF \u06A9\u06D2 \u0644\u06CC\u06D2 \u0627\u067E\u0646\u0627 \u067E\u062A\u06C1 \u0627\u0648\u0631 \u0636\u0631\u0648\u0631\u062A \u06C1\u0645\u06CC\u06BA **0303 2632605** \u067E\u0631 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA!`;
+\u0628\u06A9\u0646\u06AF \u06A9\u06D2 \u0644\u06CC\u06D2 \u0627\u067E\u0646\u0627 \u067E\u062A\u06C1 \u0627\u0648\u0631 \u0636\u0631\u0648\u0631\u062A \u06C1\u0645\u06CC\u06BA **0303 0230847** \u067E\u0631 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA!`;
     }
     return `**HDSP Verified House Maid & Cleaning Helper (Karachi):**
 
@@ -216,7 +216,7 @@ We provide honest, hardworking domestic maids for general housekeeping across Ka
   - **Part-Time Shifts:** Rs. 14,000 \u2013 20,000 / month
 - **Verification:** CNIC verification, Sindh Police verification certificate, and 3 local registered guarantors.
 
-To shortlist suitable candidates today, please call/WhatsApp **0303 2632605** or provide your requirements here!`;
+To shortlist suitable candidates today, please call/WhatsApp **0303 0230847** or provide your requirements here!`;
   }
   if (lower.includes("patient") || lower.includes("nurse") || lower.includes("elderly") || lower.includes("care") || lower.includes("bimar") || lower.includes("mareez") || lower.includes("bujurg")) {
     if (isUrdu) {
@@ -230,7 +230,7 @@ To shortlist suitable candidates today, please call/WhatsApp **0303 2632605** or
   - **12 \u06AF\u06BE\u0646\u0679\u06D2 \u0688\u06D2 \u06CC\u0627 \u0646\u0627\u0626\u0679 \u0634\u0641\u0679:** Rs. 35,000 \u2013 48,000 / \u0645\u0627\u06C1\u0627\u0646\u06C1
 - **\u062D\u0641\u0627\u0638\u062A\u06CC \u062C\u0627\u0646\u0686:** \u0646\u0627\u062F\u0631\u0627 \u062A\u0635\u062F\u06CC\u0642 \u0634\u062F\u06C1 \u0634\u0646\u0627\u062E\u062A\u06CC \u06A9\u0627\u0631\u0688\u060C \u067E\u0648\u0644\u06CC\u0633 \u06A9\u0644\u06CC\u0626\u0631\u0646\u0633 \u0627\u0648\u0631 3 \u0636\u0627\u0645\u0646\u06D4
 
-\u0641\u0648\u0631\u06CC \u0645\u0631\u06CC\u0636 \u06A9\u06CC \u062F\u06CC\u06A9\u06BE \u0628\u06BE\u0627\u0644 \u06A9\u06D2 \u0644\u06CC\u06D2 \u06C1\u0645 \u0633\u06D2 **0303 2632605** \u067E\u0631 \u0631\u0627\u0628\u0637\u06C1 \u06A9\u0631\u06CC\u06BA\u06D4`;
+\u0641\u0648\u0631\u06CC \u0645\u0631\u06CC\u0636 \u06A9\u06CC \u062F\u06CC\u06A9\u06BE \u0628\u06BE\u0627\u0644 \u06A9\u06D2 \u0644\u06CC\u06D2 \u06C1\u0645 \u0633\u06D2 **0303 0230847** \u067E\u0631 \u0631\u0627\u0628\u0637\u06C1 \u06A9\u0631\u06CC\u06BA\u06D4`;
     }
     return `**HDSP Patient Attendant & Elderly Caregiver Service (Karachi):**
 
@@ -242,7 +242,7 @@ We provide experienced male and female patient attendants for post-surgery recov
   - **12-Hour Day or Night Shifts:** Rs. 35,000 \u2013 48,000 / month
 - **Verification Guarantee:** Medical screening, Sindh Police clearance, NADRA CNIC verification, and 3 registered guarantors.
 
-Contact our medical placement coordinator on WhatsApp at **0303 2632605** to arrange an attendant within 24 hours.`;
+Contact our medical placement coordinator on WhatsApp at **0303 0230847** to arrange an attendant within 24 hours.`;
   }
   if (lower.includes("driver") || lower.includes("gari") || lower.includes("driving")) {
     if (isUrdu) {
@@ -254,7 +254,7 @@ Contact our medical placement coordinator on WhatsApp at **0303 2632605** to arr
 - **\u062A\u0646\u062E\u0648\u0627\u06C1:** Full-Time (10\u201312 \u06AF\u06BE\u0646\u0679\u06D2) \u062A\u0642\u0631\u06CC\u0628\u0627\u064B Rs. 30,000 \u2013 48,000 / \u0645\u0627\u06C1\u0627\u0646\u06C1\u06D4
 - **\u062D\u0641\u0627\u0638\u062A:** \u067E\u0648\u0644\u06CC\u0633 \u06A9\u0644\u06CC\u0626\u0631\u0646\u0633\u060C \u0646\u0627\u062F\u0631\u0627 \u0634\u0646\u0627\u062E\u062A\u06CC \u06A9\u0627\u0631\u0688 \u0627\u0648\u0631 3 \u0645\u0639\u062A\u0628\u0631 \u0636\u0627\u0645\u0646\u06D4
 
-\u0688\u0631\u0627\u0626\u06CC\u0648\u0631 \u06A9\u0627 \u0627\u0646\u0679\u0631\u0648\u06CC\u0648 \u0634\u06CC\u0688\u0648\u0644 \u06A9\u0631\u0646\u06D2 \u06A9\u06D2 \u0644\u06CC\u06D2 \u06C1\u0645\u06CC\u06BA **0303 2632605** \u067E\u0631 \u06A9\u0627\u0644 \u06CC\u0627 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA\u06D4`;
+\u0688\u0631\u0627\u0626\u06CC\u0648\u0631 \u06A9\u0627 \u0627\u0646\u0679\u0631\u0648\u06CC\u0648 \u0634\u06CC\u0688\u0648\u0644 \u06A9\u0631\u0646\u06D2 \u06A9\u06D2 \u0644\u06CC\u06D2 \u06C1\u0645\u06CC\u06BA **0303 0230847** \u067E\u0631 \u06A9\u0627\u0644 \u06CC\u0627 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA\u06D4`;
     }
     return `**HDSP Family & Executive Driver Placements (Karachi):**
 
@@ -264,13 +264,13 @@ We provide vetted, polite drivers for children school commutes, office transit, 
 - **Salary Estimate:** Full-Time (10\u201312 Hours): Rs. 30,000 \u2013 48,000 / month.
 - **Verification:** Sindh Police verification, NADRA CNIC check, and 3 local guarantors.
 
-Call or WhatsApp **0303 2632605** to review available driver CVs today!`;
+Call or WhatsApp **0303 0230847** to review available driver CVs today!`;
   }
   if (lower.includes("address") || lower.includes("office") || lower.includes("location") || lower.includes("kahan") || lower.includes("pata") || lower.includes("timing") || lower.includes("phone") || lower.includes("contact")) {
     return `**HDSP (Home Domestic Service Provider) Contact & Office Details:**
 
 - **Office Address:** Office UF-61, Defence Mall, DHA Phase 1, Karachi, Pakistan.
-- **Phone / WhatsApp:** **0303 2632605** (International: +92 303 2632605)
+- **Phone / WhatsApp:** **0303 0230847** (International: +92 303 0230847)
 - **Email:** hdsp1285@gmail.com
 - **Visiting Timings:** Monday to Saturday: 9:00 AM \u2013 9:00 PM (Emergency WhatsApp booking active 24/7)
 - **Coverage Areas:** All Karachi areas (DHA, Clifton, PECHS, Gulshan-e-Iqbal, Gulistan-e-Johar, North Nazimabad, Bahria Town, Scheme 33, Malir, Korangi, Askari).
@@ -295,7 +295,7 @@ You are welcome to visit our Defence Mall office to meet and interview candidate
 4. **\u06A9\u0627\u0645 \u06A9\u06CC \u0646\u0648\u0639\u06CC\u062A** (Full-Time\u060C Part-Time\u060C \u06CC\u0627 Live-In 24 \u06AF\u06BE\u0646\u0679\u06D2)
 5. **\u06A9\u0631\u0627\u0686\u06CC \u0645\u06CC\u06BA \u0622\u067E \u06A9\u0627 \u0639\u0644\u0627\u0642\u06C1** (DHA\u060C \u06A9\u0644\u0641\u0679\u0646\u060C \u06AF\u0644\u0634\u0646 \u0648\u063A\u06CC\u0631\u06C1)
 
-\u06CC\u0627 \u0628\u0631\u0627\u06C1 \u0631\u0627\u0633\u062A **0303 2632605** \u067E\u0631 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA \u06CC\u0627 \u06C1\u0645\u0627\u0631\u06D2 \u062F\u0641\u062A\u0631 **Office UF-61, Defence Mall, DHA Phase 1, Karachi** \u062A\u0634\u0631\u06CC\u0641 \u0644\u0627\u0626\u06CC\u06BA\u06D4`;
+\u06CC\u0627 \u0628\u0631\u0627\u06C1 \u0631\u0627\u0633\u062A **0303 0230847** \u067E\u0631 \u0648\u0627\u0679\u0633 \u0627\u06CC\u067E \u06A9\u0631\u06CC\u06BA \u06CC\u0627 \u06C1\u0645\u0627\u0631\u06D2 \u062F\u0641\u062A\u0631 **Office UF-61, Defence Mall, DHA Phase 1, Karachi** \u062A\u0634\u0631\u06CC\u0641 \u0644\u0627\u0626\u06CC\u06BA\u06D4`;
   }
   return `**Assalam o Alaikum! Welcome to HDSP (Home Domestic Service Provider).**
 
@@ -316,7 +316,7 @@ To help us find the perfect match for your home, please share:
 5. **Preferred Location / Area in Karachi** (DHA, Clifton, PECHS, Gulshan, Bahria, etc.)
 6. **Any Specific Duties or Family Preferences**
 
-You can also connect directly with our hiring desk via WhatsApp or Call at **0303 2632605** or visit us at **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`;
+You can also connect directly with our hiring desk via WhatsApp or Call at **0303 0230847** or visit us at **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`;
 }
 app.post("/api/inquiries", (req, res) => {
   try {
@@ -347,12 +347,12 @@ Area: ${area}
 Notes: ${notes || "None"}
 
 Assalam o Alaikum, I would like to finalize candidate shortlisting for this booking.`;
-    const whatsappUrl = `https://wa.me/923032632605?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://wa.me/923030230847?text=${encodeURIComponent(messageText)}`;
     return res.json({
       success: true,
       inquiry: newInquiry,
       whatsappUrl,
-      contactPhone: "0303 2632605",
+      contactPhone: "0303 0230847",
       officeAddress: "Office UF-61, Defence Mall, DHA Phase 1, Karachi, Pakistan"
     });
   } catch (err) {

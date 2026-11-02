@@ -130,7 +130,7 @@ How can I assist you today? Feel free to ask in **English or Urdu**!`,
       }
 
       const data = await res.json();
-      const replyText = data.reply || 'Thank you for your message. Please contact us on WhatsApp at 0303 2632605.';
+      const replyText = data.reply || `Thank you for your message. Please contact us on WhatsApp at ${BUSINESS_DETAILS.phone}.`;
 
       setMessages((prev) => [
         ...prev,
@@ -148,7 +148,7 @@ How can I assist you today? Feel free to ask in **English or Urdu**!`,
         {
           id: `assistant-err-${Date.now()}`,
           role: 'assistant',
-          content: `I am currently experiencing a minor connection delay. You can connect directly with our recruitment team via WhatsApp or call at **0303 2632605** or visit our office at **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`,
+          content: `I am currently experiencing a minor connection delay. You can connect directly with our recruitment team via WhatsApp or call at **${BUSINESS_DETAILS.phone}** or visit our office at **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`,
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         },
       ]);
@@ -421,7 +421,7 @@ How can I assist you today? Feel free to ask in **English or Urdu**!`,
             className="font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1"
           >
             <MessageCircle className="w-3.5 h-3.5" />
-            WhatsApp: 0303 2632605
+            WhatsApp: {BUSINESS_DETAILS.phone}
           </a>
         </div>
       </div>

@@ -76,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({
               className="flex items-center gap-1.5 text-amber-300 font-bold hover:text-amber-200 transition"
             >
               <PhoneCall className="w-3.5 h-3.5 text-amber-400" />
-              WhatsApp/Call: 0303 2632605
+              WhatsApp/Call: {BUSINESS_DETAILS.phone}
             </a>
           </div>
 

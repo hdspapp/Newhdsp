@@ -126,7 +126,7 @@ export const KarachiCoverage: React.FC<KarachiCoverageProps> = ({
               className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-5 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp: 0303 2632605</span>
+              <span>WhatsApp: {BUSINESS_DETAILS.phone}</span>
             </a>
 
             <a

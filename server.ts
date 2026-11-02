@@ -31,7 +31,7 @@ Your goal is to assist clients professionally, answer inquiries, explain verific
 
 # Business Details
 - Business Name: HDSP (Home Domestic Service Provider)
-- Phone / WhatsApp: 0303 2632605 (International: +92 303 2632605)
+- Phone / WhatsApp: 0303 0230847 (International: +92 303 0230847)
 - Office Address: Office UF-61, Defence Mall, DHA Phase 1, Karachi, Pakistan
 - Location Coverage: All major areas of Karachi (DHA Phases 1-8, Clifton, PECHS, Gulshan-e-Iqbal, Gulistan-e-Johar, North Nazimabad, Bahria Town, Scheme 33, Malir, Korangi, Askari, etc.)
 - Working Hours: Monday to Saturday 9:00 AM - 9:00 PM (Emergency WhatsApp booking 24/7)
@@ -56,7 +56,7 @@ When clients ask about safety, candidate authenticity, or trustworthiness, empha
 - Tone: Warm, respectful, professional, trustworthy, and helpful.
 - Language: You can respond in English, Urdu (Nastaliq or Roman Urdu), depending on the language used by the user. If the user greets in Urdu (e.g. "Salam", "Mujhe maid chahiye"), respond in polite Roman Urdu or Urdu script.
 - Clarity: Keep responses structured, easy to read, and quick to scan using bold text and bullet points.
-- Action-Oriented: Always encourage the user to share their requirements or reach out via WhatsApp/Phone at 0303 2632605 to begin the shortlisting process.
+- Action-Oriented: Always encourage the user to share their requirements or reach out via WhatsApp/Phone at 0303 0230847 to begin the shortlisting process.
 
 # Handling Hiring Requests
 When a customer requests to hire staff, collect the following details politely:
@@ -67,7 +67,7 @@ When a customer requests to hire staff, collect the following details politely:
 5. Preferred Location / Area in Karachi
 6. Any Specific Requirements or Duties
 
-After gathering details, summarize their request neatly and direct them to finalize the booking via phone/WhatsApp at 0303 2632605 or by visiting Office UF-61, Defence Mall, DHA Phase 1, Karachi.`;
+After gathering details, summarize their request neatly and direct them to finalize the booking via phone/WhatsApp at 0303 0230847 or by visiting Office UF-61, Defence Mall, DHA Phase 1, Karachi.`;
 
 // In-memory inquiries store for current session demonstration
 interface StoredInquiry {
@@ -191,7 +191,7 @@ function generateHdspResponse(query: string): string {
 - **ان پرسن ایچ آر انٹرویو (HR Interview):** ہمارے ڈیفنس مال آفس میں امیدوار کی ذاتی صفائی، بات چیت اور ہنر کا عملی ٹیسٹ لیا جاتا ہے۔
 - **متبادل کی سہولت (Replacement Guarantee):** اگر ملازم آپ کے گھر کے معیار پر پورا نہ اترے، تو ہم فوری متبادل فراہم کرتے ہیں۔
 
-مزید تفصیلات یا بکنگ کے لیے براہ کرم ہمیں **0303 2632605** پر کال یا واٹس ایپ کریں، یا ہمارے دفتر **Office UF-61, Defence Mall, DHA Phase 1, Karachi** تشریف لائیں۔`;
+مزید تفصیلات یا بکنگ کے لیے براہ کرم ہمیں **0303 0230847** پر کال یا واٹس ایپ کریں، یا ہمارے دفتر **Office UF-61, Defence Mall, DHA Phase 1, Karachi** تشریف لائیں۔`;
     }
     return `**HDSP's 5-Step Verification & Safety Standards:**
 
@@ -203,7 +203,7 @@ At HDSP (Home Domestic Service Provider), we enforce a rigorous screening proces
 - **In-Person HR Interview:** Conducted by our senior recruitment team at Defence Mall evaluating attitude, hygiene, and relevant domestic skills.
 - **Dedicated Replacement Guarantee:** Free, prompt candidate replacement if the staff member is not a suitable fit.
 
-To proceed with shortlisting, call or WhatsApp us at **0303 2632605** or visit **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`;
+To proceed with shortlisting, call or WhatsApp us at **0303 0230847** or visit **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`;
   }
 
   // Cook / Chef queries
@@ -220,7 +220,7 @@ To proceed with shortlisting, call or WhatsApp us at **0303 2632605** or visit *
   - **Part-Time (ایک یا دو وقت):** Rs. 18,000 – 28,000 / ماہانہ
 - **تصدیق:** پولیس کلیئرنس، نادرا شناختی کارڈ اور 3 معتبر ضامن لازمی۔
 
-کک شارٹ لسٹ کروانے کے لیے اپنا نام، مطلوبہ علاقہ اور اوقات ہمیں **0303 2632605** پر واٹس ایپ کریں یا آن لائن فارم پر کر لیں۔`;
+کک شارٹ لسٹ کروانے کے لیے اپنا نام، مطلوبہ علاقہ اور اوقات ہمیں **0303 0230847** پر واٹس ایپ کریں یا آن لائن فارم پر کر لیں۔`;
     }
     return `**HDSP Professional Cook & Chef Placement (Karachi):**
 
@@ -233,7 +233,7 @@ We supply experienced, hygienic cooks across all residential areas of Karachi:
   - **Part-Time (Morning or Evening meals):** Rs. 18,000 – 28,000 / month
 - **Screening:** Sindh Police clearance, NADRA CNIC verification, and 3 registered guarantors on file.
 
-Please share your **Full Name, WhatsApp number, and preferred area** or message us directly at **0303 2632605** to schedule interviews!`;
+Please share your **Full Name, WhatsApp number, and preferred area** or message us directly at **0303 0230847** to schedule interviews!`;
   }
 
   // Maid / Masi / Cleaner queries
@@ -250,7 +250,7 @@ Please share your **Full Name, WhatsApp number, and preferred area** or message 
   - **Part-Time (چند گھنٹے):** Rs. 14,000 – 20,000 / ماہانہ
 - **گارنٹی:** نادرا تصدیق، پولیس ریکارڈ چیک، 3 ضامن اور ریپلیسمنٹ بیک اپ۔
 
-بکنگ کے لیے اپنا پتہ اور ضرورت ہمیں **0303 2632605** پر واٹس ایپ کریں!`;
+بکنگ کے لیے اپنا پتہ اور ضرورت ہمیں **0303 0230847** پر واٹس ایپ کریں!`;
     }
     return `**HDSP Verified House Maid & Cleaning Helper (Karachi):**
 
@@ -263,7 +263,7 @@ We provide honest, hardworking domestic maids for general housekeeping across Ka
   - **Part-Time Shifts:** Rs. 14,000 – 20,000 / month
 - **Verification:** CNIC verification, Sindh Police verification certificate, and 3 local registered guarantors.
 
-To shortlist suitable candidates today, please call/WhatsApp **0303 2632605** or provide your requirements here!`;
+To shortlist suitable candidates today, please call/WhatsApp **0303 0230847** or provide your requirements here!`;
   }
 
   // Patient Attendant / Nurse / Elderly Caregiver queries
@@ -279,7 +279,7 @@ To shortlist suitable candidates today, please call/WhatsApp **0303 2632605** or
   - **12 گھنٹے ڈے یا نائٹ شفٹ:** Rs. 35,000 – 48,000 / ماہانہ
 - **حفاظتی جانچ:** نادرا تصدیق شدہ شناختی کارڈ، پولیس کلیئرنس اور 3 ضامن۔
 
-فوری مریض کی دیکھ بھال کے لیے ہم سے **0303 2632605** پر رابطہ کریں۔`;
+فوری مریض کی دیکھ بھال کے لیے ہم سے **0303 0230847** پر رابطہ کریں۔`;
     }
     return `**HDSP Patient Attendant & Elderly Caregiver Service (Karachi):**
 
@@ -291,7 +291,7 @@ We provide experienced male and female patient attendants for post-surgery recov
   - **12-Hour Day or Night Shifts:** Rs. 35,000 – 48,000 / month
 - **Verification Guarantee:** Medical screening, Sindh Police clearance, NADRA CNIC verification, and 3 registered guarantors.
 
-Contact our medical placement coordinator on WhatsApp at **0303 2632605** to arrange an attendant within 24 hours.`;
+Contact our medical placement coordinator on WhatsApp at **0303 0230847** to arrange an attendant within 24 hours.`;
   }
 
   // Driver queries
@@ -305,7 +305,7 @@ Contact our medical placement coordinator on WhatsApp at **0303 2632605** to arr
 - **تنخواہ:** Full-Time (10–12 گھنٹے) تقریباً Rs. 30,000 – 48,000 / ماہانہ۔
 - **حفاظت:** پولیس کلیئرنس، نادرا شناختی کارڈ اور 3 معتبر ضامن۔
 
-ڈرائیور کا انٹرویو شیڈول کرنے کے لیے ہمیں **0303 2632605** پر کال یا واٹس ایپ کریں۔`;
+ڈرائیور کا انٹرویو شیڈول کرنے کے لیے ہمیں **0303 0230847** پر کال یا واٹس ایپ کریں۔`;
     }
     return `**HDSP Family & Executive Driver Placements (Karachi):**
 
@@ -315,7 +315,7 @@ We provide vetted, polite drivers for children school commutes, office transit, 
 - **Salary Estimate:** Full-Time (10–12 Hours): Rs. 30,000 – 48,000 / month.
 - **Verification:** Sindh Police verification, NADRA CNIC check, and 3 local guarantors.
 
-Call or WhatsApp **0303 2632605** to review available driver CVs today!`;
+Call or WhatsApp **0303 0230847** to review available driver CVs today!`;
   }
 
   // Office location / contact queries
@@ -323,7 +323,7 @@ Call or WhatsApp **0303 2632605** to review available driver CVs today!`;
     return `**HDSP (Home Domestic Service Provider) Contact & Office Details:**
 
 - **Office Address:** Office UF-61, Defence Mall, DHA Phase 1, Karachi, Pakistan.
-- **Phone / WhatsApp:** **0303 2632605** (International: +92 303 2632605)
+- **Phone / WhatsApp:** **0303 0230847** (International: +92 303 0230847)
 - **Email:** hdsp1285@gmail.com
 - **Visiting Timings:** Monday to Saturday: 9:00 AM – 9:00 PM (Emergency WhatsApp booking active 24/7)
 - **Coverage Areas:** All Karachi areas (DHA, Clifton, PECHS, Gulshan-e-Iqbal, Gulistan-e-Johar, North Nazimabad, Bahria Town, Scheme 33, Malir, Korangi, Askari).
@@ -350,7 +350,7 @@ You are welcome to visit our Defence Mall office to meet and interview candidate
 4. **کام کی نوعیت** (Full-Time، Part-Time، یا Live-In 24 گھنٹے)
 5. **کراچی میں آپ کا علاقہ** (DHA، کلفٹن، گلشن وغیرہ)
 
-یا براہ راست **0303 2632605** پر واٹس ایپ کریں یا ہمارے دفتر **Office UF-61, Defence Mall, DHA Phase 1, Karachi** تشریف لائیں۔`;
+یا براہ راست **0303 0230847** پر واٹس ایپ کریں یا ہمارے دفتر **Office UF-61, Defence Mall, DHA Phase 1, Karachi** تشریف لائیں۔`;
   }
 
   return `**Assalam o Alaikum! Welcome to HDSP (Home Domestic Service Provider).**
@@ -372,7 +372,7 @@ To help us find the perfect match for your home, please share:
 5. **Preferred Location / Area in Karachi** (DHA, Clifton, PECHS, Gulshan, Bahria, etc.)
 6. **Any Specific Duties or Family Preferences**
 
-You can also connect directly with our hiring desk via WhatsApp or Call at **0303 2632605** or visit us at **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`;
+You can also connect directly with our hiring desk via WhatsApp or Call at **0303 0230847** or visit us at **Office UF-61, Defence Mall, DHA Phase 1, Karachi**.`;
 }
 
 // Book / Inquiry submission endpoint
@@ -401,13 +401,13 @@ app.post('/api/inquiries', (req: Request, res: Response) => {
 
     // Generate WhatsApp direct URL
     const messageText = `*HDSP Booking Request*\nReference: ${refId}\nName: ${name}\nPhone: ${phone}\nStaff Needed: ${staffType}\nWork Type: ${workType}\nArea: ${area}\nNotes: ${notes || 'None'}\n\nAssalam o Alaikum, I would like to finalize candidate shortlisting for this booking.`;
-    const whatsappUrl = `https://wa.me/923032632605?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://wa.me/923030230847?text=${encodeURIComponent(messageText)}`;
 
     return res.json({
       success: true,
       inquiry: newInquiry,
       whatsappUrl,
-      contactPhone: '0303 2632605',
+      contactPhone: '0303 0230847',
       officeAddress: 'Office UF-61, Defence Mall, DHA Phase 1, Karachi, Pakistan',
     });
   } catch (err: any) {

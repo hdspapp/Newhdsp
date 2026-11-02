@@ -197,7 +197,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-sm transition text-sm"
               >
                 <MessageCircle className="w-4 h-4" />
-                Finalize via WhatsApp (0303 2632605)
+                Finalize via WhatsApp ({BUSINESS_DETAILS.phone})
               </a>
 
               <a
@@ -384,7 +384,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
                 100% Free Consultation
               </span>
-              <span>Direct WhatsApp: 0303 2632605</span>
+              <span>Direct WhatsApp: {BUSINESS_DETAILS.phone}</span>
             </div>
           </form>
         )}

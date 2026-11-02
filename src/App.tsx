@@ -65,8 +65,8 @@ export default function App() {
 
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const phoneDisplay = '0303 2632605';
-  const phoneIntl = '923032632605';
+  const phoneDisplay = '0303 0230847';
+  const phoneIntl = '923030230847';
   const officeAddress = 'Office UF-61, Defence Mall, DHA Phase 1, Karachi';
 
   // Scroll to top on page or category change
@@ -267,9 +267,9 @@ export default function App() {
               <span className="font-medium">HDSP: Home Domestic Service Provider • 100% Verified Domestic Staff</span>
             </div>
             <div className="flex items-center gap-4 font-bold text-xs">
-              <a href="tel:03032632605" className="text-emerald-300 hover:text-white flex items-center gap-1">
+              <a href="tel:03030230847" className="text-emerald-300 hover:text-white flex items-center gap-1">
                 <PhoneCall className="w-3.5 h-3.5" />
-                <span>0303 2632605</span>
+                <span>0303 0230847</span>
               </a>
               <span className="text-emerald-800">|</span>
               <a
@@ -279,7 +279,7 @@ export default function App() {
                 className="text-amber-300 hover:text-white flex items-center gap-1"
               >
                 <MessageCircle className="w-3.5 h-3.5" />
-                <span>WhatsApp: 0303 2632605</span>
+                <span>WhatsApp: 0303 0230847</span>
               </a>
             </div>
           </div>
@@ -507,11 +507,11 @@ export default function App() {
                       <span>{officeAddress}</span>
                     </div>
                     <a
-                      href="tel:03032632605"
+                      href="tel:03030230847"
                       className="flex items-center gap-1.5 bg-emerald-800 text-white px-4 py-2 rounded-xl shadow-2xs font-bold hover:bg-emerald-900 transition"
                     >
                       <PhoneCall className="w-4 h-4" />
-                      <span>0303 2632605</span>
+                      <span>0303 0230847</span>
                     </a>
                   </div>
 
@@ -870,7 +870,7 @@ export default function App() {
                       <strong>Address:</strong> {officeAddress}
                     </p>
                     <p className="text-xs text-slate-500">
-                      Timings: Monday to Saturday (9:00 AM – 9:00 PM) • WhatsApp: 0303 2632605
+                      Timings: Monday to Saturday (9:00 AM – 9:00 PM) • WhatsApp: 0303 0230847
                     </p>
                   </div>
                   <a
@@ -915,7 +915,7 @@ export default function App() {
                       <CheckCircle2 className="w-12 h-12 text-emerald-700 mx-auto" />
                       <h3 className="font-bold text-emerald-950 text-base">Request Prepared for WhatsApp!</h3>
                       <p className="text-xs text-emerald-800 leading-relaxed">
-                        Your hiring request is ready for HDSP coordinator at <strong>0303 2632605</strong>. Click below to initiate WhatsApp chat:
+                        Your hiring request is ready for HDSP coordinator at <strong>0303 0230847</strong>. Click below to initiate WhatsApp chat:
                       </p>
                       <div className="pt-2 flex flex-col gap-2">
                         <a
@@ -925,7 +925,7 @@ export default function App() {
                           className="bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 px-4 rounded-xl text-sm inline-flex items-center justify-center gap-2 shadow-sm"
                         >
                           <MessageCircle className="w-4 h-4" />
-                          <span>Open WhatsApp Chat (0303 2632605)</span>
+                          <span>Open WhatsApp Chat (0303 0230847)</span>
                         </a>
                         <button
                           onClick={() => setFormSubmitted(false)}
@@ -1037,11 +1037,11 @@ export default function App() {
                         className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 px-4 rounded-xl text-sm shadow-md transition flex items-center justify-center gap-2 cursor-pointer"
                       >
                         <MessageCircle className="w-4 h-4" />
-                        <span>Send Request to WhatsApp (0303 2632605)</span>
+                        <span>Send Request to WhatsApp (0303 0230847)</span>
                       </button>
 
                       <p className="text-center text-[11px] text-slate-500 pt-1">
-                        Direct helpline: <strong>0303 2632605</strong> • Free consultation & candidate shortlisting
+                        Direct helpline: <strong>0303 0230847</strong> • Free consultation & candidate shortlisting
                       </p>
                     </form>
                   )}
@@ -1099,7 +1099,7 @@ export default function App() {
           className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-full shadow-lg text-xs flex items-center gap-1.5 transition"
         >
           <MessageCircle className="w-4 h-4" />
-          <span>WhatsApp: 0303 2632605</span>
+          <span>WhatsApp: 0303 0230847</span>
         </a>
       </div>
 
@@ -1110,7 +1110,7 @@ export default function App() {
             HDSP (Home Domestic Service Provider) Karachi
           </div>
           <p className="text-slate-400">
-            Address: {officeAddress} • Phone / WhatsApp: <a href="tel:03032632605" className="text-white underline">0303 2632605</a>
+            Address: {officeAddress} • Phone / WhatsApp: <a href="tel:03030230847" className="text-white underline">0303 0230847</a>
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-slate-400 pt-1">
             <button onClick={() => switchPage('home')} className="hover:text-white cursor-pointer">Home</button>
