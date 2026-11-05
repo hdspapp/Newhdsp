@@ -89,7 +89,8 @@ export const CategoryCarousel: React.FC<CategoryCarouselProps> = ({
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">
+            <span className="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-2xs">
+              <Sparkles className="w-3.5 h-3.5 text-emerald-600 animate-spin-slow" />
               All 8 Categories
             </span>
             <span className="text-xs text-slate-500 font-medium hidden sm:inline">

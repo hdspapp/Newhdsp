@@ -34,8 +34,8 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="bg-slate-900 text-white text-xs py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1 text-emerald-400 font-medium">
-              <ShieldCheck className="w-3.5 h-3.5" />
+            <span className="flex items-center gap-1.5 text-emerald-400 font-medium">
+              <ShieldCheck className="w-3.5 h-3.5 animate-pulse-glow" />
               100% CNIC & Police Cleared Staff
             </span>
             <span className="hidden md:inline text-slate-500">|</span>
@@ -53,9 +53,13 @@ export const Navbar: React.FC<NavbarProps> = ({
               href={`https://wa.me/${BUSINESS_DETAILS.whatsappIntl}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 font-bold text-emerald-400 hover:text-emerald-300 transition"
+              className="flex items-center gap-1.5 font-bold text-emerald-400 hover:text-emerald-300 transition group"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <MessageCircle className="w-3.5 h-3.5 animate-icon-wiggle" />
               <span>{BUSINESS_DETAILS.phone}</span>
             </a>
 
@@ -126,9 +130,9 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="hidden sm:flex items-center gap-2.5">
           <button
             onClick={onOpenChat}
-            className="flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/80 px-3.5 py-2 rounded-xl transition shadow-xs"
+            className="flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/80 px-3.5 py-2 rounded-xl transition shadow-xs group"
           >
-            <Bot className="w-4 h-4 text-emerald-600" />
+            <Bot className="w-4 h-4 text-emerald-600 animate-icon-float" />
             <span>Ask HDSP Assistant</span>
           </button>
 
@@ -144,10 +148,10 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center gap-2 lg:hidden">
           <button
             onClick={onOpenChat}
-            className="p-2 text-emerald-700 bg-emerald-50 rounded-lg sm:hidden"
+            className="p-2 text-emerald-700 bg-emerald-50 rounded-lg sm:hidden hover:bg-emerald-100 transition"
             title="Chat with AI"
           >
-            <Bot className="w-5 h-5" />
+            <Bot className="w-5 h-5 animate-icon-wiggle" />
           </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

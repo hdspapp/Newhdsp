@@ -25,12 +25,17 @@ import {
   HelpCircle,
   Phone,
   Eye,
-  Search
+  Search,
+  Mail,
+  Award,
+  Headphones
 } from 'lucide-react';
 import { HdspChatAssistant } from './components/HdspChatAssistant';
 import { CategoryDetailPage, DETAILED_CATEGORIES } from './components/CategoryDetailPage';
 import { FaqPage } from './components/FaqPage';
 import { CategoryCarousel } from './components/CategoryCarousel';
+import { Hero } from './components/Hero';
+import { TestimonialsSection } from './components/TestimonialsSection';
 import { categoryImages, hdspLogo, teamUniformImg, maidUniformImg, nurseUniformImg } from './assets/images/index';
 
 export type PageTab = 'home' | 'categories' | 'verification' | 'areas' | 'faqs' | 'book' | 'assistant';
@@ -267,8 +272,8 @@ export default function App() {
               <span className="font-medium">HDSP: Home Domestic Service Provider • 100% Verified Domestic Staff</span>
             </div>
             <div className="flex items-center gap-4 font-bold text-xs">
-              <a href="tel:03030230847" className="text-emerald-300 hover:text-white flex items-center gap-1">
-                <PhoneCall className="w-3.5 h-3.5" />
+              <a href="tel:03030230847" className="text-emerald-300 hover:text-white flex items-center gap-1 group">
+                <PhoneCall className="w-3.5 h-3.5 animate-icon-wiggle" />
                 <span>0303 0230847</span>
               </a>
               <span className="text-emerald-800">|</span>
@@ -276,9 +281,13 @@ export default function App() {
                 href={`https://wa.me/${phoneIntl}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-amber-300 hover:text-white flex items-center gap-1"
+                className="text-amber-300 hover:text-white flex items-center gap-1.5 group"
               >
-                <MessageCircle className="w-3.5 h-3.5" />
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <MessageCircle className="w-3.5 h-3.5 animate-pulse-glow" />
                 <span>WhatsApp: 0303 0230847</span>
               </a>
             </div>
@@ -501,107 +510,16 @@ export default function App() {
           {/* ================= PAGE 1: HOME ================= */}
           {currentPage === 'home' && (
             <div>
-              {/* Home Page Heading Banner */}
-              <section className="bg-gradient-to-b from-white to-emerald-50/50 py-12 md:py-16 border-b border-slate-200">
-                <div className="max-w-5xl mx-auto px-4 text-center">
-                  <div className="flex items-center justify-center gap-2 mb-3">
-                    <img
-                      src={hdspLogo}
-                      alt="HDSP Logo"
-                      className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-full shadow-md border-2 border-emerald-600/30 p-1 bg-white hover:scale-105 transition duration-300"
-                      referrerPolicy="no-referrer"
-                    />
-                  </div>
-
-                  <div className="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 border border-emerald-200 px-3.5 py-1 rounded-full text-xs font-semibold mb-4">
-                    <ShieldCheck className="w-4 h-4 text-emerald-700" />
-                    <span>Premier Karachi Domestic Staff Agency</span>
-                  </div>
-
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                    Hire 100% Verified Domestic Staff in Karachi
-                  </h1>
-
-                  <p className="mt-3 text-sm sm:text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                    House Maids (Masi), Experienced Cooks, Family Drivers, Babysitters, and Patient Attendants. Screened with <strong className="text-slate-800">Sindh Police Clearance</strong>, <strong className="text-slate-800">NADRA CNIC</strong>, and <strong className="text-slate-800">3 Local Guarantors</strong>.
-                  </p>
-
-                  <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm">
-                    <div className="flex items-center gap-1.5 bg-white border border-slate-200 px-3.5 py-2 rounded-xl shadow-2xs text-slate-700">
-                      <MapPin className="w-4 h-4 text-emerald-700 shrink-0" />
-                      <span>{officeAddress}</span>
-                    </div>
-                    <a
-                      href="tel:03030230847"
-                      className="flex items-center gap-1.5 bg-emerald-800 text-white px-4 py-2 rounded-xl shadow-2xs font-bold hover:bg-emerald-900 transition"
-                    >
-                      <PhoneCall className="w-4 h-4" />
-                      <span>0303 0230847</span>
-                    </a>
-                  </div>
-
-                  <div className="mt-6 flex flex-wrap justify-center gap-3">
-                    <button
-                      onClick={() => switchPage('book')}
-                      className="bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 px-6 rounded-xl text-sm shadow-md transition flex items-center gap-2 cursor-pointer"
-                    >
-                      <span>Book Domestic Staff</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </button>
-
-                    <button
-                      onClick={() => switchPage('categories')}
-                      className="bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 font-bold py-3 px-6 rounded-xl text-sm shadow-2xs transition flex items-center gap-2 cursor-pointer"
-                    >
-                      <Grid className="w-4 h-4 text-emerald-700" />
-                      <span>Explore Category Pages</span>
-                    </button>
-
-                    <button
-                      onClick={() => switchPage('faqs')}
-                      className="bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 font-bold py-3 px-5 rounded-xl text-sm shadow-2xs transition flex items-center gap-2 cursor-pointer"
-                    >
-                      <HelpCircle className="w-4 h-4 text-emerald-700" />
-                      <span>View FAQs</span>
-                    </button>
-                  </div>
-
-                  {/* Verified Uniform Staff Team Showcase Banner */}
-                  <div className="mt-10 max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200/90 shadow-lg overflow-hidden text-left">
-                    <div className="relative aspect-16/9 sm:aspect-21/9 w-full overflow-hidden bg-slate-900">
-                      <img
-                        src={teamUniformImg}
-                        alt="HDSP Verified Domestic Staff Team in Official Uniform"
-                        className="w-full h-full object-cover object-center"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex items-end p-4 sm:p-6">
-                        <div className="flex flex-wrap items-center justify-between gap-3 w-full">
-                          <div>
-                            <div className="inline-flex items-center gap-1.5 bg-emerald-600/95 backdrop-blur-xs text-white text-[11px] font-bold px-3 py-1 rounded-full mb-1.5 shadow-sm">
-                              <img src={hdspLogo} alt="Logo" className="w-4 h-4 object-contain rounded-full" />
-                              <span>Official HDSP Uniform & Badge Staff</span>
-                            </div>
-                            <h3 className="text-white font-extrabold text-base sm:text-lg">
-                              Verified, Disciplined & Uniformed Domestic Staff in Karachi
-                            </h3>
-                            <p className="text-emerald-200 text-xs hidden sm:block mt-0.5">
-                              Our staff wear the official HDSP emblem uniform with verified CNIC, police clearance, and 3 guarantors on record.
-                            </p>
-                          </div>
-                          <button
-                            onClick={() => switchPage('book')}
-                            className="bg-white hover:bg-emerald-50 text-emerald-950 font-bold py-2.5 px-4 rounded-xl text-xs shrink-0 shadow-sm transition flex items-center gap-1.5 cursor-pointer"
-                          >
-                            <span>Book Staff</span>
-                            <ArrowRight className="w-3.5 h-3.5" />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
+              {/* Grand Hero Section */}
+              <Hero
+                onOpenBooking={(role) => {
+                  if (role) setFormData((prev) => ({ ...prev, staffType: role }));
+                  switchPage('book');
+                }}
+                onOpenChatWithPrompt={(_prompt) => {
+                  switchPage('assistant');
+                }}
+              />
 
               {/* Direct Quick Category Links */}
               <section className="py-6 bg-emerald-900 text-white text-xs">
@@ -680,6 +598,13 @@ export default function App() {
                   </div>
                 </div>
               </section>
+
+              {/* Customer Testimonials Section with Karachi Reviews & Star Ratings */}
+              <TestimonialsSection
+                onBookStaff={() => switchPage('book')}
+                phoneIntl={phoneIntl}
+                phoneDisplay={phoneDisplay}
+              />
             </div>
           )}
 
@@ -1145,9 +1070,9 @@ export default function App() {
         {currentPage !== 'assistant' && (
           <button
             onClick={() => switchPage('assistant')}
-            className="bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 px-3.5 rounded-full shadow-lg text-xs flex items-center gap-1.5 border border-slate-700 cursor-pointer"
+            className="bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 px-3.5 rounded-full shadow-lg text-xs flex items-center gap-2 border border-slate-700 cursor-pointer transition transform hover:scale-105"
           >
-            <Bot className="w-4 h-4 text-emerald-400" />
+            <Bot className="w-4 h-4 text-emerald-400 animate-icon-wiggle" />
             <span>Ask AI Assistant</span>
           </button>
         )}
@@ -1156,46 +1081,303 @@ export default function App() {
           href={`https://wa.me/${phoneIntl}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-full shadow-lg text-xs flex items-center gap-1.5 transition"
+          className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-full shadow-lg text-xs flex items-center gap-2 transition transform hover:scale-105"
         >
-          <MessageCircle className="w-4 h-4" />
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
+          </span>
+          <MessageCircle className="w-4 h-4 animate-icon-wiggle" />
           <span>WhatsApp: 0303 0230847</span>
         </a>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400 text-xs py-10 border-t border-slate-800">
-        <div className="max-w-5xl mx-auto px-4 text-center space-y-3">
-          <img
-            src={hdspLogo}
-            alt="HDSP Logo"
-            className="w-14 h-14 object-contain rounded-full bg-white p-1 mx-auto shadow-md border-2 border-emerald-500/30"
-            referrerPolicy="no-referrer"
-          />
-          <div className="font-bold text-white text-base">
-            HDSP (Home Domestic Service Provider) Karachi
+      {/* Pre-Footer Quick Hiring Banner */}
+      <section className="bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 text-white border-t border-b border-emerald-900/60 py-10 px-4 sm:px-6 relative overflow-hidden">
+        <div className="absolute -top-24 -left-24 w-80 h-80 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-teal-600/10 rounded-full blur-3xl pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 relative z-10">
+          <div className="space-y-2 text-center lg:text-left max-w-2xl">
+            <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+              </span>
+              <span>Fast 24 to 48 Hour Dispatch Across Karachi</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+              Need Verified Domestic Staff For Your Home?
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Every maid, cook, patient attendant, and driver is biometrically checked with NADRA CNIC validation and registered police clearance.
+            </p>
           </div>
-          <p className="text-slate-400">
-            Address: {officeAddress} • Phone / WhatsApp: <a href="tel:03030230847" className="text-white underline">0303 0230847</a>
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 text-slate-400 pt-1">
-            <button onClick={() => switchPage('home')} className="hover:text-white cursor-pointer">Home</button>
-            <span>•</span>
-            <button onClick={() => switchPage('categories')} className="hover:text-white cursor-pointer">Categories</button>
-            <span>•</span>
-            <button onClick={() => switchPage('verification')} className="hover:text-white cursor-pointer">Verification</button>
-            <span>•</span>
-            <button onClick={() => switchPage('areas')} className="hover:text-white cursor-pointer">Karachi Areas</button>
-            <span>•</span>
-            <button onClick={() => switchPage('faqs')} className="hover:text-white cursor-pointer">FAQs</button>
-            <span>•</span>
-            <button onClick={() => switchPage('book')} className="hover:text-white cursor-pointer">Book Staff</button>
-            <span>•</span>
-            <button onClick={() => switchPage('assistant')} className="hover:text-white cursor-pointer">AI Assistant</button>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
+            <a
+              href="tel:03030230847"
+              className="bg-white hover:bg-slate-100 text-slate-900 font-bold px-5 py-3 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-md transition transform hover:-translate-y-0.5"
+            >
+              <PhoneCall className="w-4 h-4 text-emerald-700 animate-icon-wiggle" />
+              <span>Call: 0303 0230847</span>
+            </a>
+
+            <a
+              href={`https://wa.me/${phoneIntl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-3 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-md transition transform hover:-translate-y-0.5"
+            >
+              <MessageCircle className="w-4 h-4 animate-icon-wiggle" />
+              <span>WhatsApp Us 24/7</span>
+            </a>
+
+            <button
+              onClick={() => switchPage('book')}
+              className="bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-500/30 font-bold px-5 py-3 rounded-xl text-xs sm:text-sm flex items-center gap-2 transition cursor-pointer"
+            >
+              <span>Book Online</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
           </div>
-          <p className="text-[11px] text-slate-600 pt-2 border-t border-slate-800">
-            © {new Date().getFullYear()} HDSP Karachi. Verified domestic staffing & home care.
-          </p>
+        </div>
+      </section>
+
+      {/* Main Multi-Column Footer */}
+      <footer className="bg-slate-950 text-slate-300 border-t border-slate-800/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-14 pb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+            {/* Column 1: Brand & Credibility (Span 4) */}
+            <div className="lg:col-span-4 space-y-5">
+              <div className="flex items-center gap-3">
+                <img
+                  src={hdspLogo}
+                  alt="Home Domestic Service Provider Logo"
+                  className="w-16 h-16 object-contain rounded-full bg-white p-1 shadow-lg border-2 border-emerald-500/40 animate-pulse-glow shrink-0"
+                  referrerPolicy="no-referrer"
+                />
+                <div>
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-emerald-400 block">
+                    Government Registered Agency
+                  </span>
+                  <h3 className="text-xl font-extrabold text-white tracking-tight leading-tight">
+                    HDSP Karachi
+                  </h3>
+                  <p className="text-xs font-semibold text-emerald-200">
+                    Home Domestic Service Provider
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Karachi's trusted verification-first domestic staffing agency. We provide background-cleared maids, cooks, patient attendants, baby sitters, drivers, and security personnel with 3 registered local guarantors and continuous customer support.
+              </p>
+
+              {/* Trust Badges */}
+              <div className="grid grid-cols-3 gap-2 pt-1">
+                <div className="bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-center">
+                  <ShieldCheck className="w-5 h-5 text-emerald-400 mx-auto mb-1 animate-pulse-glow" />
+                  <span className="text-[10px] font-bold text-slate-200 block leading-tight">100% Police</span>
+                  <span className="text-[9px] text-slate-400">& NADRA Cleared</span>
+                </div>
+                <div className="bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-center">
+                  <Award className="w-5 h-5 text-emerald-400 mx-auto mb-1" />
+                  <span className="text-[10px] font-bold text-slate-200 block leading-tight">3 Registered</span>
+                  <span className="text-[9px] text-slate-400">Guarantors</span>
+                </div>
+                <div className="bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-center">
+                  <Clock className="w-5 h-5 text-emerald-400 mx-auto mb-1" />
+                  <span className="text-[10px] font-bold text-slate-200 block leading-tight">Replacement</span>
+                  <span className="text-[9px] text-slate-400">Warranty</span>
+                </div>
+              </div>
+
+              {/* Direct Contact Details */}
+              <div className="space-y-2 pt-2 text-xs text-slate-300">
+                <div className="flex items-start gap-2.5">
+                  <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Office UF-61, Defence Mall, DHA Phase 1, Karachi, Pakistan</span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <PhoneCall className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>Direct Hotline: <a href="tel:03030230847" className="text-white font-bold hover:underline">0303 0230847</a></span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>Email: <a href="mailto:hdsp1285@gmail.com" className="text-white hover:underline">hdsp1285@gmail.com</a></span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <Clock className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>Hours: Mon–Sat 9:00 AM – 9:00 PM (WhatsApp 24/7)</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Column 2: Staff Services (Span 3) */}
+            <div className="lg:col-span-3 space-y-4">
+              <div className="border-b border-slate-800 pb-2">
+                <h4 className="text-sm font-bold uppercase tracking-wider text-white">
+                  Domestic Staff
+                </h4>
+                <p className="text-[11px] text-slate-400">Click to view role & salary rates</p>
+              </div>
+
+              <ul className="space-y-2 text-xs">
+                {services.map((svc) => (
+                  <li key={svc.id}>
+                    <button
+                      onClick={() => openCategoryDetailPage(svc.id)}
+                      className="group flex items-center justify-between w-full py-1 text-slate-300 hover:text-emerald-400 transition cursor-pointer text-left"
+                    >
+                      <span className="flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 opacity-60 group-hover:opacity-100 group-hover:scale-125 transition"></span>
+                        <span className="font-medium group-hover:translate-x-1 transition-transform">{svc.title}</span>
+                      </span>
+                      <span className="text-[10px] text-slate-500 group-hover:text-slate-400 font-mono">
+                        {svc.salary.split('–')[0].replace('Rs. ', '')}k+
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+
+              <button
+                onClick={() => switchPage('categories')}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 pt-2 transition cursor-pointer"
+              >
+                <span>Browse All 8 Categories</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            {/* Column 3: Karachi Areas (Span 3) */}
+            <div className="lg:col-span-3 space-y-4">
+              <div className="border-b border-slate-800 pb-2">
+                <h4 className="text-sm font-bold uppercase tracking-wider text-white">
+                  Karachi Coverage
+                </h4>
+                <p className="text-[11px] text-slate-400">Active candidate dispatch zones</p>
+              </div>
+
+              <ul className="space-y-2 text-xs">
+                {areas.slice(0, 8).map((area, idx) => (
+                  <li key={idx}>
+                    <button
+                      onClick={() => switchPage('areas')}
+                      className="group flex items-center justify-between w-full py-1 text-slate-300 hover:text-emerald-400 transition cursor-pointer text-left"
+                    >
+                      <span className="flex items-center gap-1.5">
+                        <MapPin className="w-3.5 h-3.5 text-slate-500 group-hover:text-emerald-400 transition shrink-0" />
+                        <span className="group-hover:translate-x-1 transition-transform truncate">{area.name}</span>
+                      </span>
+                      <span className="text-[10px] bg-slate-900 border border-slate-800 text-slate-400 px-1.5 py-0.5 rounded">
+                        {area.dispatch.replace('Within ', '')}
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+
+              <button
+                onClick={() => switchPage('areas')}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 pt-2 transition cursor-pointer"
+              >
+                <span>Check Karachi Dispatch Times</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            {/* Column 4: Quick Links & Support (Span 2) */}
+            <div className="lg:col-span-2 space-y-4">
+              <div className="border-b border-slate-800 pb-2">
+                <h4 className="text-sm font-bold uppercase tracking-wider text-white">
+                  Quick Links
+                </h4>
+                <p className="text-[11px] text-slate-400">Navigation & info</p>
+              </div>
+
+              <ul className="space-y-2.5 text-xs">
+                <li>
+                  <button onClick={() => switchPage('home')} className="hover:text-emerald-400 transition cursor-pointer flex items-center gap-1.5">
+                    <HomeIcon className="w-3.5 h-3.5 text-slate-500" />
+                    <span>Home Page</span>
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => switchPage('verification')} className="hover:text-emerald-400 transition cursor-pointer flex items-center gap-1.5">
+                    <ShieldCheck className="w-3.5 h-3.5 text-slate-500" />
+                    <span>Verification Standards</span>
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => switchPage('faqs')} className="hover:text-emerald-400 transition cursor-pointer flex items-center gap-1.5">
+                    <HelpCircle className="w-3.5 h-3.5 text-slate-500" />
+                    <span>Frequently Asked Questions</span>
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => switchPage('book')} className="hover:text-emerald-400 transition cursor-pointer flex items-center gap-1.5">
+                    <FileCheck className="w-3.5 h-3.5 text-slate-500" />
+                    <span>Book Staff Online</span>
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => switchPage('assistant')} className="hover:text-emerald-400 transition cursor-pointer flex items-center gap-1.5">
+                    <Bot className="w-3.5 h-3.5 text-emerald-400 animate-icon-wiggle" />
+                    <span>AI Assistant (Urdu/Eng)</span>
+                  </button>
+                </li>
+              </ul>
+
+              {/* WhatsApp Live Status Card */}
+              <div className="bg-emerald-950/60 border border-emerald-800/60 rounded-xl p-3 space-y-1.5 mt-4">
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </span>
+                  <span className="text-[11px] font-bold text-emerald-300">WhatsApp Active</span>
+                </div>
+                <p className="text-[10px] text-slate-300 leading-tight">
+                  Typical response time under 15 minutes for candidate dossiers.
+                </p>
+                <a
+                  href={`https://wa.me/${phoneIntl}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-1.5 rounded-lg text-[11px] mt-2 transition"
+                >
+                  Chat: 0303 0230847
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Copyright & Disclaimer Bar */}
+          <div className="mt-12 pt-6 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+            <div className="flex items-center gap-2 text-center md:text-left flex-wrap">
+              <span>© {new Date().getFullYear()} HDSP (Home Domestic Service Provider) Karachi.</span>
+              <span className="hidden sm:inline text-slate-600">•</span>
+              <span>All rights reserved.</span>
+              <span className="hidden sm:inline text-slate-600">•</span>
+              <span className="text-slate-400">Office UF-61, Defence Mall, DHA Phase 1, Karachi</span>
+            </div>
+
+            <div className="flex items-center gap-3 text-slate-400">
+              <button onClick={() => switchPage('verification')} className="hover:text-white transition cursor-pointer">
+                Privacy & Verification Policy
+              </button>
+              <span>•</span>
+              <button onClick={() => switchPage('faqs')} className="hover:text-white transition cursor-pointer">
+                Replacement Terms
+              </button>
+              <span>•</span>
+              <a href="tel:03030230847" className="text-emerald-400 hover:text-emerald-300 font-bold">
+                0303 0230847
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
