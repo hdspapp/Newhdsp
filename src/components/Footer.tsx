@@ -10,6 +10,7 @@ import {
   Bot
 } from 'lucide-react';
 import { BUSINESS_DETAILS, SERVICES_LIST, KARACHI_AREAS } from '../data/hdspData';
+import { hdspLogo } from '../assets/images/index';
 
 interface FooterProps {
   onOpenBooking: () => void;
@@ -23,10 +24,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenChat }) => 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Col 1: Brand & Identity */}
           <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-xl bg-emerald-700 text-white font-extrabold flex items-center justify-center text-sm shadow-md">
-                HDSP
-              </div>
+            <div className="flex items-center gap-2.5">
+              <img
+                src={hdspLogo}
+                alt="HDSP Logo"
+                className="w-10 h-10 object-contain rounded-full bg-white p-0.5 border border-emerald-500/40 shadow-xs"
+                referrerPolicy="no-referrer"
+              />
               <div>
                 <span className="font-extrabold text-base text-white tracking-tight">HDSP</span>
                 <p className="text-[10px] text-emerald-400 font-semibold uppercase tracking-wider">

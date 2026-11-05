@@ -31,7 +31,7 @@ import { HdspChatAssistant } from './components/HdspChatAssistant';
 import { CategoryDetailPage, DETAILED_CATEGORIES } from './components/CategoryDetailPage';
 import { FaqPage } from './components/FaqPage';
 import { CategoryCarousel } from './components/CategoryCarousel';
-import { categoryImages } from './assets/images/index';
+import { categoryImages, hdspLogo, teamUniformImg, maidUniformImg, nurseUniformImg } from './assets/images/index';
 
 export type PageTab = 'home' | 'categories' | 'verification' | 'areas' | 'faqs' | 'book' | 'assistant';
 
@@ -291,16 +291,32 @@ export default function App() {
             {/* Brand */}
             <button
               onClick={() => switchPage('home')}
-              className="flex items-center gap-2.5 text-left cursor-pointer"
+              className="flex items-center gap-3 text-left cursor-pointer group py-1"
             >
-              <div className="w-10 h-10 rounded-xl bg-emerald-800 text-white font-extrabold flex items-center justify-center text-lg shadow-sm">
-                H
+              <div className="flex flex-col items-center">
+                <img
+                  src={hdspLogo}
+                  alt="Home Domestic Service Provider"
+                  className="w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-full shadow-md border-2 border-emerald-600/30 bg-white p-0.5 group-hover:scale-105 transition shrink-0"
+                  referrerPolicy="no-referrer"
+                />
+                <span className="text-[9px] sm:text-[10px] font-bold text-emerald-950 uppercase tracking-tight text-center leading-tight mt-1 max-w-[115px] sm:max-w-[130px] hidden xs:block">
+                  Home Domestic Service Provider
+                </span>
               </div>
-              <div>
-                <span className="font-extrabold text-xl tracking-tight text-slate-900">HDSP</span>
-                <p className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">
-                  Karachi Domestic Staffing
-                </p>
+              <div className="flex flex-col justify-center">
+                <div className="flex items-center gap-1.5">
+                  <span className="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 leading-none">HDSP</span>
+                  <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-200 px-2 py-0.5 rounded-full uppercase">
+                    Karachi
+                  </span>
+                </div>
+                <span className="text-xs sm:text-sm text-slate-800 font-bold leading-tight mt-1">
+                  Home Domestic Service Provider
+                </span>
+                <span className="text-[10px] sm:text-[11px] text-slate-500 font-medium">
+                  100% Verified Domestic Staff
+                </span>
               </div>
             </button>
 
@@ -488,6 +504,15 @@ export default function App() {
               {/* Home Page Heading Banner */}
               <section className="bg-gradient-to-b from-white to-emerald-50/50 py-12 md:py-16 border-b border-slate-200">
                 <div className="max-w-5xl mx-auto px-4 text-center">
+                  <div className="flex items-center justify-center gap-2 mb-3">
+                    <img
+                      src={hdspLogo}
+                      alt="HDSP Logo"
+                      className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-full shadow-md border-2 border-emerald-600/30 p-1 bg-white hover:scale-105 transition duration-300"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+
                   <div className="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 border border-emerald-200 px-3.5 py-1 rounded-full text-xs font-semibold mb-4">
                     <ShieldCheck className="w-4 h-4 text-emerald-700" />
                     <span>Premier Karachi Domestic Staff Agency</span>
@@ -539,6 +564,41 @@ export default function App() {
                       <HelpCircle className="w-4 h-4 text-emerald-700" />
                       <span>View FAQs</span>
                     </button>
+                  </div>
+
+                  {/* Verified Uniform Staff Team Showcase Banner */}
+                  <div className="mt-10 max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200/90 shadow-lg overflow-hidden text-left">
+                    <div className="relative aspect-16/9 sm:aspect-21/9 w-full overflow-hidden bg-slate-900">
+                      <img
+                        src={teamUniformImg}
+                        alt="HDSP Verified Domestic Staff Team in Official Uniform"
+                        className="w-full h-full object-cover object-center"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex items-end p-4 sm:p-6">
+                        <div className="flex flex-wrap items-center justify-between gap-3 w-full">
+                          <div>
+                            <div className="inline-flex items-center gap-1.5 bg-emerald-600/95 backdrop-blur-xs text-white text-[11px] font-bold px-3 py-1 rounded-full mb-1.5 shadow-sm">
+                              <img src={hdspLogo} alt="Logo" className="w-4 h-4 object-contain rounded-full" />
+                              <span>Official HDSP Uniform & Badge Staff</span>
+                            </div>
+                            <h3 className="text-white font-extrabold text-base sm:text-lg">
+                              Verified, Disciplined & Uniformed Domestic Staff in Karachi
+                            </h3>
+                            <p className="text-emerald-200 text-xs hidden sm:block mt-0.5">
+                              Our staff wear the official HDSP emblem uniform with verified CNIC, police clearance, and 3 guarantors on record.
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => switchPage('book')}
+                            className="bg-white hover:bg-emerald-50 text-emerald-950 font-bold py-2.5 px-4 rounded-xl text-xs shrink-0 shadow-sm transition flex items-center gap-1.5 cursor-pointer"
+                          >
+                            <span>Book Staff</span>
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -1104,8 +1164,14 @@ export default function App() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
+      <footer className="bg-slate-900 text-slate-400 text-xs py-10 border-t border-slate-800">
         <div className="max-w-5xl mx-auto px-4 text-center space-y-3">
+          <img
+            src={hdspLogo}
+            alt="HDSP Logo"
+            className="w-14 h-14 object-contain rounded-full bg-white p-1 mx-auto shadow-md border-2 border-emerald-500/30"
+            referrerPolicy="no-referrer"
+          />
           <div className="font-bold text-white text-base">
             HDSP (Home Domestic Service Provider) Karachi
           </div>

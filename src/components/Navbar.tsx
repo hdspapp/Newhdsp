@@ -11,6 +11,7 @@ import {
   Users
 } from 'lucide-react';
 import { BUSINESS_DETAILS } from '../data/hdspData';
+import { hdspLogo } from '../assets/images/index';
 
 interface NavbarProps {
   onOpenBooking: () => void;
@@ -72,18 +73,31 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
         {/* Brand */}
-        <a href="#" className="flex items-center gap-2.5">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-700 to-teal-800 flex items-center justify-center text-white shadow-md font-extrabold tracking-wider text-base">
-            HDSP
+        <a href="#" className="flex items-center gap-3 group py-1">
+          <div className="flex flex-col items-center">
+            <img
+              src={hdspLogo}
+              alt="Home Domestic Service Provider"
+              className="w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-full shadow-md border-2 border-emerald-600/30 bg-white p-0.5 group-hover:scale-105 transition shrink-0"
+              referrerPolicy="no-referrer"
+            />
+            <span className="text-[9px] sm:text-[10px] font-bold text-emerald-950 uppercase tracking-tight text-center leading-tight mt-1 max-w-[115px] sm:max-w-[130px] hidden xs:block">
+              Home Domestic Service Provider
+            </span>
           </div>
-          <div>
+          <div className="flex flex-col justify-center">
             <div className="flex items-center gap-1.5">
-              <span className="font-extrabold text-lg tracking-tight text-slate-900">HDSP</span>
-              <span className="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.2 rounded-full uppercase tracking-wider">
+              <span className="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 leading-none">HDSP</span>
+              <span className="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                 Karachi
               </span>
             </div>
-            <p className="text-[11px] text-slate-500 font-medium">Home Domestic Service Provider</p>
+            <p className="text-xs sm:text-sm text-slate-800 font-bold leading-tight mt-1">
+              Home Domestic Service Provider
+            </p>
+            <p className="text-[10px] sm:text-[11px] text-slate-500 font-medium">
+              100% Verified Domestic Staff
+            </p>
           </div>
         </a>
 

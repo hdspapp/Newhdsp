@@ -13,6 +13,7 @@ import {
   Building
 } from 'lucide-react';
 import { BUSINESS_DETAILS, KARACHI_AREAS, SERVICES_LIST } from '../data/hdspData';
+import { hdspLogo } from '../assets/images/index';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -111,22 +112,30 @@ export const BookingModal: React.FC<BookingModalProps> = ({
       <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-xl overflow-hidden border border-slate-200 animate-in fade-in zoom-in-95 duration-200">
         {/* Top Header */}
         <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 text-white p-5 flex items-start justify-between">
-          <div>
-            <div className="flex items-center gap-2 mb-1">
-              <span className="bg-emerald-500/30 text-emerald-200 border border-emerald-400/30 text-[11px] font-semibold px-2 py-0.5 rounded-full">
-                Verified Domestic Placement
-              </span>
-              <span className="text-xs text-emerald-200 flex items-center gap-1">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-300" />
-                3 Guarantors Verified
-              </span>
+          <div className="flex items-start gap-3">
+            <img
+              src={hdspLogo}
+              alt="HDSP Logo"
+              className="w-12 h-12 object-contain rounded-full bg-white p-0.5 border border-emerald-400/50 shadow-sm shrink-0"
+              referrerPolicy="no-referrer"
+            />
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="bg-emerald-500/30 text-emerald-200 border border-emerald-400/30 text-[11px] font-semibold px-2 py-0.5 rounded-full">
+                  Verified Domestic Placement
+                </span>
+                <span className="text-xs text-emerald-200 flex items-center gap-1">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-300" />
+                  3 Guarantors Verified
+                </span>
+              </div>
+              <h2 className="text-xl font-bold tracking-tight text-white">
+                {submittedResult ? 'Booking Request Registered' : 'Hire Verified Domestic Staff'}
+              </h2>
+              <p className="text-xs text-emerald-200/90 mt-0.5">
+                HDSP Karachi • Fast shortlisting within 24 hours
+              </p>
             </div>
-            <h2 className="text-xl font-bold tracking-tight text-white">
-              {submittedResult ? 'Booking Request Registered' : 'Hire Verified Domestic Staff'}
-            </h2>
-            <p className="text-xs text-emerald-200/90 mt-0.5">
-              HDSP Karachi • Fast shortlisting within 24 hours
-            </p>
           </div>
           <button
             onClick={resetForm}

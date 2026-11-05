@@ -15,7 +15,7 @@ import {
   MapPin,
   Building
 } from 'lucide-react';
-import { categoryImages } from '../assets/images/index';
+import { categoryImages, maidUniformImg, nurseUniformImg } from '../assets/images/index';
 
 export interface DetailedCategory {
   id: string;

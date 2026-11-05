@@ -17,6 +17,7 @@ import {
   Minimize2
 } from 'lucide-react';
 import { BUSINESS_DETAILS } from '../data/hdspData';
+import { hdspLogo } from '../assets/images/index';
 
 interface ChatMessage {
   id: string;
@@ -234,9 +235,12 @@ How can I assist you today? Feel free to ask in **English or Urdu**!`,
       <div className="bg-gradient-to-r from-emerald-800 via-emerald-700 to-teal-800 text-white px-4 py-3.5 flex items-center justify-between shrink-0 shadow-sm">
         <div className="flex items-center gap-3">
           <div className="relative">
-            <div className="w-10 h-10 rounded-xl bg-emerald-600/60 border border-emerald-400/40 flex items-center justify-center text-white shadow-inner">
-              <Bot className="w-5 h-5 text-emerald-200" />
-            </div>
+            <img
+              src={hdspLogo}
+              alt="HDSP Logo"
+              className="w-10 h-10 object-contain rounded-full bg-white p-0.5 border border-emerald-300 shadow-sm"
+              referrerPolicy="no-referrer"
+            />
             <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-400 border-2 border-emerald-900 rounded-full animate-pulse" />
           </div>
           <div>
@@ -309,9 +313,12 @@ How can I assist you today? Feel free to ask in **English or Urdu**!`,
             className={`flex gap-2.5 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             {msg.role === 'assistant' && (
-              <div className="w-7 h-7 rounded-lg bg-emerald-700 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm text-xs font-bold">
-                H
-              </div>
+              <img
+                src={hdspLogo}
+                alt="HDSP"
+                className="w-7 h-7 object-contain rounded-full bg-white p-0.5 border border-slate-200 shrink-0 mt-0.5 shadow-2xs"
+                referrerPolicy="no-referrer"
+              />
             )}
 
             <div

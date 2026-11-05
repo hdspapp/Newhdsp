@@ -13,6 +13,7 @@ import {
   Building
 } from 'lucide-react';
 import { BUSINESS_DETAILS, KARACHI_AREAS, SERVICES_LIST } from '../data/hdspData';
+import { hdspLogo } from '../assets/images/index';
 
 interface HeroProps {
   onOpenBooking: (prefillStaff?: string) => void;
@@ -48,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({
         <div className="text-center max-w-3xl mx-auto space-y-5">
           {/* Top verified badge */}
           <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 px-3.5 py-1.5 rounded-full text-xs font-semibold backdrop-blur-xs shadow-inner">
-            <ShieldCheck className="w-4 h-4 text-emerald-400" />
+            <img src={hdspLogo} alt="HDSP Logo" className="w-5 h-5 object-contain rounded-full bg-white p-0.5" />
             <span>Karachi's Trusted Domestic Staffing & Care Agency</span>
           </div>
 

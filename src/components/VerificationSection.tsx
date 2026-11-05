@@ -12,6 +12,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { VERIFICATION_PILLARS, BUSINESS_DETAILS } from '../data/hdspData';
+import { hdspLogo } from '../assets/images/index';
 
 interface VerificationSectionProps {
   onOpenBooking: () => void;
@@ -29,6 +30,14 @@ export const VerificationSection: React.FC<VerificationSectionProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="flex items-center justify-center mb-3">
+            <img
+              src={hdspLogo}
+              alt="HDSP Verification Seal"
+              className="w-14 h-14 object-contain rounded-full bg-white p-1 shadow-sm border border-emerald-300"
+              referrerPolicy="no-referrer"
+            />
+          </div>
           <div className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-2.5">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
             Uncompromising Safety & Screening
